@@ -1,0 +1,12 @@
+<?php
+$filepath=$_GET["filename"];
+if(is_dir($filepath))
+{
+	rmdir($filepath);
+}
+else
+{
+	unlink($filepath);
+}
+header("location:fm.php?foldername=".dirname($filepath)."/");
+?>

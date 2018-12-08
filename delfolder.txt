@@ -1,0 +1,25 @@
+<?php
+function deletedir($dir){
+      if(!handle=@opendir($dir)){     //检测要打开目录是否存在
+               die("没有该目录");
+      }
+     while(false !==($file=readdir($handle))){
+               if($file!=="."&&$file!==".."){       //排除当前目录与父级目录
+                            $file=$dir .DIRECTORY_SEPARATOR. $file;
+                            if(is_dir($file)){
+                                  deletedir($file);
+                            }else{
+                                  if(@unlink($file)){
+                                         echo "文件<b>$file</b>删除成功。<br>";
+                                  }else{
+                                          echo  "文件<b>$file</b>删除失败!<br>";
+                                 }
+                }
+     }
+    if(@rmdir($dir)){
+           echo "目录<b>$dir</b>删除成功了。<br>\n";
+    }else{
+           echo "目录<b>$dir</b>删除失败！<br>\n";
+  }
+}
+?>

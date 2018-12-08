@@ -1,0 +1,48 @@
+<html>
+<body>
+	<h1 align="center">新生注册页面</h1>
+	<table align="center" border="1">
+		<form method="post" name="fr1" action="insert.php">	
+			<tr valign="baseline">
+				<td nowrap align="right">学号：</td>
+				<td colspan="2"><input type="text" name="txtsid" size="32"></td>
+			</tr>
+			<tr valign="baseline">
+				<td nowrap align="right">姓名：</td>
+				<td colspan="2"><input type="text" name="txtsname" size="32"></td>
+			</tr>
+			<tr valign="baseline">
+				<td nowrap align="right">性别：</td>
+				<td colspan="2"><input type="radio" name="rdosex" value="1" checked>男
+				    <input type="radio" name="rdosex" value="0">女
+				</td>
+			</tr>
+			<tr valign="baseline">
+				<td nowrap align="right">出生日期：</td>
+				<td colspan="2"><input type="text" name="txtbirth" size="32"></td>
+			</tr>
+			<tr valign="baseline">
+				<td nowrap align="right">专业：</td>
+				<td colspan="2"><input type="text" name="txtsp" size="32"></td>
+			</tr>
+			<tr valign="baseline">
+				<td nowrap align="right">入学成绩：</td>
+				<td colspan="2"><input type="text" name="txtAscores" size="32"></td>
+			</tr>
+			<tr valign="baseline">
+				<td nowrap align="right">
+					<input type="submit" name="sub1" value="提交">
+				</td>
+				<td>
+					<input type="reset" name="rst1" value="重设"></td>
+		</form>
+				<td>
+					<form method="post" name="fr1" action="educ.php">
+						<input type="submit" name="sub2" value="返回">
+					</form>
+				</td>
+			</tr>
+		
+	</table>
+</body>
+</html>

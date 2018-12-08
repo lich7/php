@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>用户注册表单示例</title>
+</head>
+<body leftmargin="20">
+	<h1 align="center">用户注册</h1>
+	<p><table align="center"><tr><td>
+	<font color="red">以下内容请如实填写，其中带有*号的栏目是必须填写的</font>
+	<form name="frmUserReg" method="POST" action="12.php" >
+		<p>请输入你的账号:
+		<input type="text" name="txtUserId" size="16">*
+		<p>请输入你的密码:
+		<input type="password" name="txtPwd" size="16" maxlength="8">*(密码不能超过8位)
+		<p>请再次输入密码:
+		<input type="password" name="txtPwd2" size="16" maxlength="8">*
+		<p>请输入你的姓名:
+		<input type="text" name="txtUserName" size="16">*
+		<p>请选择你的性别:
+		<input type="Radio" name="rdoSex" value="1" checked >男
+		<input type="Radio" name="rdoSex" value="0">女*
+		<p>请输入你的生日:
+		<input type="text" name="txtYear" size="4">年
+		<input type="text" name="txtMonth" size="2">月
+		<input type="text" name="txtDay" size="2">日* 
+		<p>请选择最高学历:
+		<select size="1" name="sltEducation">
+			<option value="大专" >大专</option>
+			<option value="本科" selected>大学本科</option>
+			<option value="硕士">硕士</option>
+			<option value="博士">博士</option>
+		</select>
+		<p>请选择你的爱好:
+		<input type="checkbox" name="chkLove1" value="读书">读书
+		<input type="checkbox" name="chkLove2" value="看电影">看电影
+		<input type="checkbox" name="chkLove3" value="旅游">旅游
+		<input type="checkbox" name="chkLove4" value="其他">其他
+		<p>你有什么意见吗?
+		<br><textarea name="txtMemo" rows="4" cols="40"></textarea>
+		<p align="center"><input type="submit" name="btnSubmit" value="注册" >
+		<input type="reset" name="btnReset" value="取消" >
+	</form>
+	</td></tr>
+	<tr align="center"><td>
+		<a href="1.htm">已注册用户登录</a>
+	</td></tr></table>
+</body>
+</html>
